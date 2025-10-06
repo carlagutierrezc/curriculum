@@ -30,11 +30,12 @@
         <nav>
             <h2>Contenido</h2>
             <ol>
-                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#perfil">Perfil Profesional</a></li>
                 <li><a href="#formacion">Formación</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#habilidades-tecnicas">Habilidades técnicas</a></li>
                 <li><a href="#idiomas">Idiomas</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
             </ol>
         </nav>
     </header>
@@ -45,6 +46,7 @@
             <p>Estudiante de Ingeniería en Computación con interés en desarrollo web,
         análisis de datos e inteligencia artificial. Motivada por el aprendizaje
         continuo, la resolución de problemas y el trabajo colaborativo.</p>
+            <!--Este es un comentario-->
             <iframe src="" width="450" allowfullscreen="" loading="lazy">      
             </iframe>
         </section>
@@ -108,10 +110,6 @@
                 <li>Herramientas: Git, GitHub</li>
                 <li>Análisis de datos: Pandas / Matplotlib (Python), Base R</li>
             </ul>
-            <table>
-                <th>Tecnologías</th>
-                <th>Nivel</th>
-            </table>
         </section>
 
         <section id="habilidades-blandas">
@@ -128,8 +126,23 @@
         <section id="idiomas">
             <h2>Idiomas</h2>
             <ul>
-                <li>Español — Nativo</li>
-                <li>Inglés — Nivel B2 (certificado internacional ECCE - Michigan)</li>
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <th></th>
+                        <th>Nivel</th>
+                        <th>Certificación</th>
+                    </tr>
+                    <tr>
+                        <th>Español</th>
+                        <td>Nativo</td>
+                        <td>No aplica</td>
+                    </tr>
+                    <tr>
+                        <th>Inglés</th>
+                        <td>B2</td>
+                        <td>Certificado internacional ECCE - Michigan</td>
+                    </tr>
+                </table>
             </ul>
         </section>
 
@@ -137,21 +150,21 @@
             <h2>Testimonios</h2>
             <article>
                 <blockquote>
-
+                    cita
                 </blockquote>
                 <p><strong>Ing.</strong> CARGO<br>
                 CUANDO TRABAJO CONMIGO</p>
             </article>
             <article>
                 <blockquote>
-
+                    cita
                 </blockquote>
                 <p><strong>Ing.</strong> CARGO<br>
                 CUANDO TRABAJO CONMIGO</p>
             </article>
             <article>
                 <blockquote>
-
+                    cita
                 </blockquote>
                 <p><strong>Ing.</strong> CARGO<br>
                 CUANDO TRABAJO CONMIGO</p>
@@ -161,21 +174,17 @@
         <section id="formulario">
             <h2>Formulario de Contacto</h2>
             <form action="mailto:cagutier@espol.edu.ec" method="post" enctype="text/plain">
-                <label for="nombre">* Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..." required>
-                <br><br>
+                <label for="nombre">Nombre:*</label>
+                <input id="nombre" name="nombre" placeholder="Ingrese su nombre..." required>
                 
-                <label for="email">* Correo:</label>
+                <label for="email">Correo:*</label>
                 <input type="email" id="email" name="email" placeholder="Ingrese un correo..." required>
-                <br><br>
                 
                 <label for="asunto">Asunto: </label>
-                <input type="text" id="asunto" name="asunto" placeholder="Ingrese un asunto..."/>
-                <br><br>
+                <input id="asunto" name="asunto" placeholder="Ingrese un asunto..."/>
 
-                <label for="mensaje">* Mensaje:</label><br>
+                <label for="mensaje">Mensaje:*</label><br>
                 <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escriba su mensaje..." required></textarea>
-                <br><br>
                 
                 <button type="submit">Enviar</button>
             </form>
