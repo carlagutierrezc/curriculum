@@ -1,0 +1,21 @@
+body {
+    background-color: #fffffe;
+    color: #2d334a;
+    font-family: Arial, Helvetica, 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    color: #272343;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#photo {
+    border-radius: 2em;
+    width: 160px;
+}
+
