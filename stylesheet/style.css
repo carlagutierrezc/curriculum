@@ -1,6 +1,5 @@
 * {
     background-color: #fffffe;
-    color: #2d334a;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;;
 }
 
@@ -14,11 +13,6 @@ h1 {
     height: auto;
 }
 
-.subtitle {
-    color: rgb(151 156 165 / 0.89);
-    text-transform: uppercase;
-}
-
 footer p {
     text-align: right;
     font: italic;
@@ -30,18 +24,30 @@ nav > ul {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding: 10px;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     gap: 1rem;
 }
 
 section {
-    border-width: 0.2pt solid #cedddd;
     margin: 4px 2px 8px 2px;
     padding: 1.5% 0.8%;
     margin-bottom: 1.2rem;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234,0.60);
+}
+
+nav > section{
+    width:15%;
+    text-align: center;
 }
 
 section > form{
