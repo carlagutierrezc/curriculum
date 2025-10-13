@@ -26,6 +26,11 @@ footer p {
 
 nav > ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 section {
@@ -37,4 +42,26 @@ section {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234,0.60);
+}
+
+section > form{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+#testimonios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+#testimonios > h2 {
+    grid-column: 1 / -1;
+}
+
+#testimonios > article {
+    flex: 1 1 calc(33.333% - 1rem);
 }
