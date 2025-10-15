@@ -12,52 +12,55 @@
 <body>
     <header>
         <nav>
-            <section>
-                <h2 class="subtitle">Curriculum Vitae</h2>
+            <section id="nav-left">
+                <h4>Curriculum Vitae</h4>
             </section>
             <ul>
                 <li><a href="#perfil">Perfil Profesional</a></li>
                 <li><a href="#formacion">Formación</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#habilidades-tecnicas">Habilidades técnicas</a></li>
+                <li><a href="#habilidades-blandas">Habilidades blandas</a></li>
                 <li><a href="#idiomas">Idiomas</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contactos</a></li>
             </ul>
-            <section>
+            <section id="documentopdf">
                 <a href="images/visa_27_1.jpg" download="visa_27_1.jpg">Descargar mi CV</a>
             </section>
         </nav>
 
-        <h1>Carla Alejandra Gutierrez Cordova</h1>
         <figure>
             <img src="images/visa_27_1.jpg" id="photo"/>
-            <figcaption>Foto profesional</figcaption>
         </figure>
+        <h1>Carla Alejandra Gutierrez Cordova</h1>
         <p>Estudiante de Ingeniería en Computación — ESPOL</p>
-        <p>Guayaquil, Ecuador</p>
         
     </header>
 
     <main>
         <section id="perfil">
             <h2 class="subtitle">Perfil Profesional</h2>
-            <p>Estudiante de Ingeniería en Computación con interés en desarrollo web,
-        análisis de datos e inteligencia artificial. Motivada por el aprendizaje
-        continuo, la resolución de problemas y el trabajo colaborativo.</p>
-            <iframe src="https://youtu.be/W6ksdOT4j4g" width="450" allowfullscreen="" loading="lazy">    
-            </iframe>
+            <p id="introperfil">¡Bienvenido a mi sitio web! Soy Carla Gutierrez, estudiante de Ingeniería en Computación en ESPOL, apasionada por los datos, la Inteligencia Artificial y el desarrollo web.</p>
+            <div id="columna-texto">
+                <p id="hook">Comprometida con la innovación y la excelencia técnica, me especializo en transformar información compleja en soluciones prácticas y accionables.</p>
+                <p id="parrafonormal">Mi enfoque combina análisis riguroso, atención al detalle y aprendizaje continuo, con la pasión por crear soluciones tecnológicas que generen un impacto real.</p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W6ksdOT4j4g?si=VQFzl06hdDHK4ELv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <section id="formacion">
             <h2 class="subtitle">Formación Académica</h2>
+            <p>Conoce mi formación y experiencias que han marcado mi camino académico y profesional.</p>
             <article>
                 <h3>Escuela Superior Politécnica del Litoral (ESPOL)</h3>
                 <p><strong>Ingeniería en Computación</strong> — 2023 – Presente</p>
+                <p>En ESPOL he desarrollado proyectos desafiantes en programación, desarrollo web e inteligencia artificial, participando activamente en ayudantías y actividades prácticas que han reforzado mi capacidad para aplicar conocimientos de manera creativa y trabajar de forma efectiva en equipo.</p>
             </article>     
             <article>
                 <h3>Centro Ecuatoriano Norteamericano (CEN)</h3>
                 <p><strong>Programa de Inglés</strong> — 2022 – 2023</p>
-                <p>Certificado de Inglés Nivel B2</p>
+                <p>Completé un programa intensivo de inglés que me permitió alcanzar el nivel B2, desarrollando competencias de comunicación avanzada y habilidades para interactuar en entornos profesionales y académicos internacionales.</p>
             </article>
             <article>
                 <h3>Unidad Educativa Andrés Bello López</h3>
@@ -66,12 +69,14 @@
                     <li>Abanderada del Ecuador</li>
                     <li>Mejor bachiller de la promoción</li>
                 </ol>
+                <p>Durante mi bachillerato, me destaqué por mi rendimiento académico y liderazgo, siendo reconocida como Abanderada del Ecuador y Mejor bachiller de la promoción, lo que consolidó mi disciplina, responsabilidad y compromiso con la excelencia.</p>
             </article>
 
         </section>
 
         <section id="proyectos">
-            <h2 class="subtitle">Proyectos</h2>
+            <h2 class="subtitle">Proyectos destacados</h2>
+            <p>Explora mis proyectos destacados, donde aplico conocimientos de programación, análisis de datos e inteligencia artificial, transformando ideas en soluciones prácticas e innovadoras.</p>
             <article>
                 <h3>Gira de Concierto</h3>
                 <p>
@@ -97,40 +102,45 @@
                 <p>Repositorio: <a href="https://github.com/carlagutierrezc/Detectabilidad-de-aves-costeras-ecuatorianas">
                 Detectabilidad-de-aves-costeras-ecuatorianas</a></p>
             </article>
+            <img src="images/coding-924920_1280.jpg" id="imagenproyectos"/>
         </section>
 
-        <section id="habilidades-tecnicas">
-            <h2 class="subtitle">Habilidades Técnicas</h2>
-            <ul>
-                <li>Lenguajes: Python, R, Java, SQL, HTML, CSS</li>
-                <li>Bases de datos: MySQL</li>
-                <li>Herramientas: Git, GitHub</li>
-                <li>Análisis de datos: Pandas / Matplotlib (Python), Base R</li>
-            </ul>
-        </section>
+        <section id="habilidades">
+            <section id="habilidades-tecnicas">
+                <h2 class="subtitle">Habilidades Técnicas</h2>
+                <ul class="habilidad">
+                    <li data-level="95" id="Python">Python</li>
+                    <li data-level="80" id="R">R</li>
+                    <li data-level="55" id="Java">Java</li>
+                    <li data-level="88" id="HTML5">HTML5</li>                    
+                    <li data-level="85" id="CSS">CSS</li>
+                    <li data-level="78" id="MySQL">MySQL</li>
+                    <li data-level="60" id="GitGithub">Git/Github</li>
+                    <li data-level="82" id="Pandas">Pandas/Matplotlib</li>
+                </ul>
+            </section>
 
-        <section id="habilidades-blandas">
-            <h2 class="subtitle">Habilidades Blandas</h2>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación efectiva</li>
-                <li>Resolución de problemas</li>
-                <li>Adaptabilidad</li>
-                <li>Liderazgo académico</li>
-            </ul>
+            <section id="habilidades-blandas">
+                <h2 class="subtitle">Habilidades Blandas</h2>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Resolución de problemas</li>
+                    <li>Adaptabilidad</li>
+                    <li>Liderazgo académico</li>
+                </ul>
+            </section>
         </section>
-
         <section id="idiomas">
             <h2 class="subtitle">Idiomas</h2>
-            <ul>
-                <table style="border-collapse: collapse;">
-                    <thead>
-                        <th></th>
-                        <th>Nivel</th>
-                        <th>Certificación</th>
-                    </thead>
-                    <tbody>
-                        <tr>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <th></th>
+                    <th>Nivel</th>
+                    <th>Certificación</th>
+                </thead>
+                <tbody>
+                    <tr>
                         <th>Español</th>
                         <td>Nativo</td>
                         <td>No aplica</td>
@@ -140,9 +150,8 @@
                         <td>B2</td>
                         <td>Certificado internacional ECCE - Michigan</td>
                     </tr>
-                    </tbody>
-                </table>
-            </ul>
+                </tbody>
+            </table>
         </section>
 
         <section id="testimonios">
@@ -215,14 +224,15 @@
 
         <section id="mapa">
             <h2 class="subtitle">Ubicación</h2>
+            <p>Actualmente resido en la ciudad de Guayaquil, Ecuador, un lugar que me permite aprovechar su vibrante entorno tecnológico y laboral. Sin embargo, mi ubicación no limita mis capacidades de trabajo. Estoy abierta a oportunidades laborales remotas, lo que me permite colaborar con equipos internacionales y contribuir a proyectos globales de manera eficiente y flexible.</p>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997577.102!2d-80.084!3d-2.170998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dbe4e64f3d7%3A0x67d7ef2b7e947e48!2sGuayaquil!5e0!3m2!1ses!2sec!4v1696110000000!5m2!1ses!2sec" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                style="border:0;" id="mapagoogle" allowfullscreen="" loading="lazy">
             </iframe>
         </section>
         
-        <section>
-            <h2 class="subtitle">Contacto</h2>
+        <section id="contacto">
+            <h2 class="subtitle">Contáctame</h2>
             <ul>
                 <li>Correo institucional: <a href="mailto:cagutier@espol.edu.ec" target="_blank">cagutier@espol.edu.ec</a></li>
                 <li>Teléfono: +593981605352</li>
