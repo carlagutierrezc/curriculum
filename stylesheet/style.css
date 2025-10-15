@@ -488,6 +488,8 @@ section > form{
 }
 
 #mapa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background: #FFFFFF;
     border: 1px solid var(--borde);
     border-radius: 12px;
@@ -497,12 +499,14 @@ section > form{
 }
 
 #mapa .subtitle{ 
-    margin: 0 0 8px; 
+    margin: 0 0 8px;
+    grid-column: 1/-1;
 }
 
 #mapa p{ 
     margin: 0 0 10px; 
-    color: #444; 
+    color: #444;
+    align-self: center;
 }
 
 #mapagoogle{
@@ -533,7 +537,8 @@ section > form{
     margin: 0;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 
 #contacto > ul > li{
@@ -543,6 +548,8 @@ section > form{
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,.04);
     color: #1f2937;
+    justify-content: center;
+    text-align: center;
 }
 
 #contacto a{ 
