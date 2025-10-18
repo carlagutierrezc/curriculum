@@ -16,7 +16,8 @@
 
 body {
     background-color: #FBF6F8;
-    
+    color: var(--texto);
+    line-height: 1.6;
 }
 
 header {
@@ -28,9 +29,26 @@ p {
     color: #2A2A2A;
 }
 
-h1 {
-    font-weight: bold;
-    color: #2A2A2A;
+h1{
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.2px;
+  font-size: clamp(26px, 2.3vw, 32px);
+  margin: 8px 0 2px;
+}
+
+h2, .subtitle{
+  font-weight: 700;
+  color: #1f2937;
+  font-size: clamp(20px, 1.9vw, 24px);
+  margin: 0 0 8px;
+}
+
+h3{
+  font-weight: 700;
+  color: #1f2937;
+  font-size: clamp(16px, 1.3vw, 18px);
+  margin: 4px 0 6px;
 }
 
 figure {
@@ -96,6 +114,12 @@ div {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     padding: 2%;
+}
+
+#documentopdf {
+    text-align: center;
+    padding: 1%;
+    margin: 0 auto;
 }
 
 nav > section{
@@ -357,7 +381,6 @@ nav a:hover{
 
 #idiomas .subtitle {
     margin: 0 0 8px 0;
-    font-size: 1.25rem;
     font-weight: 700;
     color: var(--texto);
 }
@@ -423,6 +446,11 @@ nav a:hover{
   color: #6b7280;
 }
 
+#geografia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 #formulario{
     background: #FFFFFF;
     border: 1px solid var(--borde);
@@ -430,11 +458,12 @@ nav a:hover{
     box-shadow: 0 8px 20px rgba(0,0,0,.04);
     padding: 16px;
     margin-block: 18px 26px;
+    grid-column: 1;
 }
 
 section > form{
     display: grid;
-    grid-template-columns: repeat(2, 1frm);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
     column-gap: 1rem;
 }
@@ -449,8 +478,7 @@ section > form{
 }
 
 #formulario input,
-#formulario select,
-#formulario textarea{
+#formulario select {
     width: 100%;
     padding: 10px 12px;
     border: 1px solid var(--borde);
@@ -464,6 +492,15 @@ section > form{
 #formulario textarea{ 
     min-height: 120px; 
     resize: vertical; 
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    background: #fff;
+    color: var(--texto);
+    font: inherit;
+    box-sizing: border-box;
 }
 
 #formulario input:focus,
@@ -494,28 +531,27 @@ section > form{
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 6px 16px rgba(128,0,32,.22);
+    grid-column: 1 / -1;
 }
 
 #mapa{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background: #FFFFFF;
     border: 1px solid var(--borde);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,.04);
     padding: 16px;
     margin-block: 18px 26px;
+    grid-column: 2;
 }
 
 #mapa .subtitle{ 
     margin: 0 0 8px;
-    grid-column: 1/-1;
 }
 
 #mapa p{ 
     margin: 0 0 10px; 
     color: #444;
-    align-self: center;
 }
 
 #mapagoogle{
@@ -527,13 +563,13 @@ section > form{
     display: block;
 }
 
-#contacto{
+#contacto {
     background: #FFFFFF;
     border: 1px solid var(--borde);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,.04);
     padding: 16px;
-    margin-block: 18px 26px;
+    margin-block: 18px 26px; 
 }
 
 #contacto .subtitle{ 

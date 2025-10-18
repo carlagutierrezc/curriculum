@@ -136,7 +136,7 @@
             <table style="border-collapse: collapse;">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th>Idiomas</th>
                         <th>Nivel</th>
                         <th>Certificación</th>
                     </tr>
@@ -180,58 +180,59 @@
                 Ha trabajdo con Carla desde el 2023 hasta la actualidad, haciendo seguimiento del proceso de aprendizaje de sus alumnos.</p>
             </article>
         </section>
+        <div id="geografia">
+            <section id="formulario">
+                <h2 class="subtitle">Formulario de Contacto</h2>
+                <form action="mailto:cagutier@espol.edu.ec" method="post" enctype="text/plain">
+                    <label for="nombre">Nombre:*</label>
+                    <input id="nombre" name="nombre" placeholder="Ingrese su nombre..." required>
+                    
+                    <label for="email">Correo:*</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese un correo..." required>
+                    
+                    <label for="asunto">Asunto: </label>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta general</option>
+                        <option value="colaboracion">Colaboración en proyectos</option>
+                        <option value="oportunidad">Oportunidad laboral</option>                    
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="otra-pregunta">Otra pregunta</option>
+                    </select>
 
-        <section id="formulario">
-            <h2 class="subtitle">Formulario de Contacto</h2>
-            <form action="mailto:cagutier@espol.edu.ec" method="post" enctype="text/plain">
-                <label for="nombre">Nombre:*</label>
-                <input id="nombre" name="nombre" placeholder="Ingrese su nombre..." required>
-                
-                <label for="email">Correo:*</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese un correo..." required>
-                
-                <label for="asunto">Asunto: </label>
-                <select id="asunto" name="asunto">
-                    <option value="consulta">Consulta general</option>
-                    <option value="colaboracion">Colaboración en proyectos</option>
-                    <option value="oportunidad">Oportunidad laboral</option>                    
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="otra-pregunta">Otra pregunta</option>
-                </select>
+                    <fieldset>
+                        <legend>¿Cuál es tu área de interés?</legend>
+                        <label for="analisis">Análisis de datos</label>
+                        <input type="radio" id="analisis" name="analisis" value="analisis">
+                        <label for="desarrollo">Desarrollo Web</label>
+                        <input type="radio" id="desarrollo" name="desarrollo" value="desarrollo">
+                    </fieldset>
 
-                <fieldset>
-                    <legend>¿Cuál es tu área de interés?</legend>
-                    <label for="analisis">Análisis de datos</label>
-                    <input type="radio" id="analisis" name="analisis" value="analisis">
-                    <label for="desarrollo">Desarrollo Web</label>
-                    <input type="radio" id="desarrollo" name="desarrollo" value="desarrollo">
-                </fieldset>
+                    <fieldset>
+                        <legend>¿Qué tecnologías usas?</legend>
+                        <label for="python">Python</label>
+                        <input type="checkbox" id="python" name="python" value="python">
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="java" name="java" value="java">
+                        <label for="sql">SQL</label>
+                        <input type="checkbox" id="sql" name="sql" value="sql">
+                    </fieldset>                
 
-                <fieldset>
-                    <legend>¿Qué tecnologías usas?</legend>
-                    <label for="python">Python</label>
-                    <input type="checkbox" id="python" name="python" value="python">
-                    <label for="java">Java</label>
-                    <input type="checkbox" id="java" name="java" value="java">
-                    <label for="sql">SQL</label>
-                    <input type="checkbox" id="sql" name="sql" value="sql">
-                </fieldset>                
+                    <label for="mensaje">Mensaje:*</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escriba su mensaje..." required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
 
-                <label for="mensaje">Mensaje:*</label>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escriba su mensaje..." required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <section id="mapa">
-            <h2 class="subtitle">Ubicación</h2>
-            <p>Actualmente resido en la ciudad de Guayaquil, Ecuador, un lugar que me permite aprovechar su vibrante entorno tecnológico y laboral. Sin embargo, mi ubicación no limita mis capacidades de trabajo. Estoy abierta a oportunidades laborales remotas, lo que me permite colaborar con equipos internacionales y contribuir a proyectos globales de manera eficiente y flexible.</p>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997577.102!2d-80.084!3d-2.170998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dbe4e64f3d7%3A0x67d7ef2b7e947e48!2sGuayaquil!5e0!3m2!1ses!2sec!4v1696110000000!5m2!1ses!2sec" 
-                style="border:0;" id="mapagoogle" allowfullscreen="" loading="lazy">
-            </iframe>
-        </section>
+            <section id="mapa">
+                <h2 class="subtitle">Ubicación</h2>
+                <p>Actualmente resido en la ciudad de Guayaquil, Ecuador, un lugar que me permite aprovechar su vibrante entorno tecnológico y laboral. Sin embargo, mi ubicación no limita mis capacidades de trabajo. Estoy abierta a oportunidades laborales remotas, lo que me permite colaborar con equipos internacionales y contribuir a proyectos globales de manera eficiente y flexible.</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997577.102!2d-80.084!3d-2.170998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dbe4e64f3d7%3A0x67d7ef2b7e947e48!2sGuayaquil!5e0!3m2!1ses!2sec!4v1696110000000!5m2!1ses!2sec" 
+                    style="border:0;" id="mapagoogle" allowfullscreen="" loading="lazy">
+                </iframe>
+            </section>
+        </div>
         
         <section id="contacto">
             <h2 class="subtitle">Contáctame</h2>
@@ -247,7 +248,5 @@
     <footer>
         <small>© Carla Gutierrez - 2025</small>
     </footer>
-
-
 </body>
 </html>
